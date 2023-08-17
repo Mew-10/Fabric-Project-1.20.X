@@ -3,6 +3,7 @@ package net.terk.mccourse;
 import net.fabricmc.api.ModInitializer;
 
 import net.terk.mccourse.block.ModBlocks;
+import net.terk.mccourse.item.ModItemGroup;
 import net.terk.mccourse.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,9 @@ public class MCCourseMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroup.registerItemGroups();
+
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
 	}

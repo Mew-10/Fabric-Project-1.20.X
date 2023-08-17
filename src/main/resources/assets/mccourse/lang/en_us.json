@@ -3,7 +3,12 @@
   "item.mccourse.raw_pink_garnet": "Raw Pink Garnet",
 
 
-
   "block.mccourse.pink_garnet_block": "Block Of Pink Garnet",
-  "block.mccourse.raw_pink_garnet_block": "Block Of Raw Pink Garnet"
+  "block.mccourse.pink_garnet_ore": "Pink Garnet Ore",
+  "block.mccourse.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
+  "block.mccourse.end_pink_garnet_ore": "End Pink Garnet Ore",
+  "block.mccourse.nether_pink_garnet_ore": "Nether Pink Garnet Ore",
+  "block.mccourse.raw_pink_garnet_block": "Block Of Raw Pink Garnet",
+
+  "itemgroup_mccourse_tab": "Mccourse Tab"
 }
