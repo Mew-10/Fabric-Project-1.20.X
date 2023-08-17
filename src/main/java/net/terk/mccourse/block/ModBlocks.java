@@ -17,6 +17,9 @@ public class ModBlocks {
     public static final Block PINK_GARNET_BLOCK = registeBlock("pink_garnet_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
+    public static final Block RAW_PINK_GARNET_BLOCK = registeBlock("raw_pink_garnet_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
 
     private static Block registeBlock(String name, Block block){
         registerBlockItem(name, block);
