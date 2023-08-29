@@ -4,12 +4,15 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.terk.mccourse.MCCourseMod;
+import net.terk.mccourse.block.custom.SoundBlock;
 
 public class ModBlocks {
 
@@ -21,16 +24,16 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     public static final Block PINK_GARNET_ORE = registeBlock("pink_garnet_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
-
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE), UniformIntProvider.create(3,6)));
     public static final Block DEEPSLATE_PINK_GARNET_ORE = registeBlock("deepslate_pink_garnet_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
-
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE), UniformIntProvider.create(3,6)));
     public static final Block END_PINK_GARNET_ORE = registeBlock("end_pink_garnet_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
-
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE), UniformIntProvider.create(3,6)));
     public static final Block NETHER_PINK_GARNET_ORE = registeBlock("nether_pink_garnet_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK), UniformIntProvider.create(3,6)));
+
+    public static final Block SOUND_BLOCK = registeBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
 
     private static Block registeBlock(String name, Block block){
