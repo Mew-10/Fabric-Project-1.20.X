@@ -34,7 +34,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.END_PINK_GARNET_ORE)
                 .add(ModBlocks.NETHER_PINK_GARNET_ORE)
                 .add(ModBlocks.PINK_GARNET_BLOCK)
-                .add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                .add(ModBlocks.RAW_PINK_GARNET_BLOCK)
+                .add(ModBlocks.PINK_GARNET_SLAB)
+                .add(ModBlocks.PINK_GARNET_STAIRS)
+                .add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
