@@ -43,5 +43,13 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.PINK_GARNET_STAIRS, Ingredient.ofItems(ModItems.PINK_GARNET));
         offerPressurePlateRecipe(exporter, ModBlocks.PINK_GARNET_PRESSURE_PLATE, ModItems.PINK_GARNET);
 
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_GARNET_BUTTON)
+                .pattern("   ")
+                .pattern(" G ")
+                .pattern("   ")
+                .input('G', ModBlocks.PINK_GARNET_BLOCK)
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.PINK_GARNET_BUTTON) + "_"));
+
     }
 }
