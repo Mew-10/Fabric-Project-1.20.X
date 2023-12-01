@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.terk.mccourse.block.ModBlocks;
@@ -39,6 +40,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 0.25f, 125, "pink_garnet");
 
         offerSlabRecipe(exporter, RecipeCategory.MISC, ModBlocks.PINK_GARNET_SLAB, ModItems.PINK_GARNET);
-        createStairsRecipe(ModBlocks.PINK_GARNET_STAIRS, ModItems.PINK_GARNET);
+        createStairsRecipe(ModBlocks.PINK_GARNET_STAIRS, Ingredient.ofItems(ModItems.PINK_GARNET));
+        offerPressurePlateRecipe(exporter, ModBlocks.PINK_GARNET_PRESSURE_PLATE, ModItems.PINK_GARNET);
+
     }
 }
